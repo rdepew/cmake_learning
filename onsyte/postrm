@@ -1,0 +1,5 @@
+#! /bin/sh
+
+/bin/rm -rf /home/devuser/apps/hello
+
+

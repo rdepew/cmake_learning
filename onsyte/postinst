@@ -1,0 +1,4 @@
+#! /bin/sh
+
+sudo chown -r devuser:devuser /home/devuser/apps/hello
+sudo chmod 755 /home/devuser/apps/hello/hello.py
