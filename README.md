@@ -54,6 +54,29 @@ make package
 CMake and CPack create an install package and put it in the 'build'
 directory.
 
+## How-to: Using dpkg
+
+If you use the CMakeLists.txt file in the first few commits of this repo,
+then `make package` creates a .deb file. I think this is similar to a .pkg
+file.
+
+To install the .deb file on a ZumLink, copy it to the /data directory and:
+```
+sudo dpkg -i package-name.deb
+```
+
+To list the contents of a .deb file:
+```
+sudo dpkg --contents package-name.deb
+```
+
+To remove the package after it's installed:
+```
+sudo dpkg -r package-name.deb # This keeps the config files
+# or
+sudo dpkg -p package-name.deb # This deletes the config files (p for "purge")
+```
+
 ## How-to: Some details
 
 1. If you change CMakeLists.txt, you have to rerun `cmake`.
