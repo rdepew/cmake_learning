@@ -2,3 +2,4 @@
 
 sudo chown -r devuser:devuser /home/devuser/apps/hello
 sudo chmod 755 /home/devuser/apps/hello/hello.py
+# TODO: Add the install_*.sh scripts to this script.

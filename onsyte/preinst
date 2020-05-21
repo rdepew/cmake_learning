@@ -1,3 +1,5 @@
 #! /bin/sh
 
+# TODO: Do all of the pip3 installs in this file.
+# TODO: Add some stdout so that the user knows what's going on.
 mkdir /home/devuser/apps/hello
