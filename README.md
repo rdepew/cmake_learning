@@ -19,6 +19,15 @@ be a "by the way, you can do this with CMake" sort of application, but
 for me, CPack is the focus. Naturally, I will learn CMake along the way
 because you can't have CPack without CMake.
 
+## How-to: Prequisites, Dependencies
+
+Before you can start, you need to install some packages.
+```
+sudo apt install build-essentials g++ cmake
+```
+
+I think that's it.
+
 ## How-to: Quick version
 
 Basically, it goes like this. For a project called 'hello', you create
