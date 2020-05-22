@@ -86,9 +86,8 @@ To install the .deb file on a ZumLink, copy it to the /data directory and:
 sudo apt install -f package-name
 ```
 
-Note that, even if the package name is `something_1.0_Linux.deb`, you only
-need to type `something` for the package name. Also note the `-f` option, 
-which specifies to install from the file rather than from an APT repository.
+Note the `-f` option, which specifies to install from the file rather than
+from an APT repository.
 
 To list the contents of a .deb file:
 ```
@@ -99,6 +98,9 @@ To remove the package after it's installed:
 ```
 sudo apt remove package-name
 ```
+
+Note that when removing a package, you specify just the package name, not the
+entire filename: `hello`, not `hello_1.0_linux.deb`.
 
 
 ## How-to: Some details
