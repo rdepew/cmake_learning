@@ -77,6 +77,30 @@ sudo dpkg -r package-name.deb # This keeps the config files
 sudo dpkg -p package-name.deb # This deletes the config files (p for "purge")
 ```
 
+## How-to: Using apt instead of dpkg
+
+You can use `apt` instead of `dpkg` to install and remove the .deb file.
+
+To install the .deb file on a ZumLink, copy it to the /data directory and:
+```
+sudo apt install -f package-name
+```
+
+Note that, even if the package name is `something_1.0_Linux.deb`, you only
+need to type `something` for the package name. Also note the `-f` option, 
+which specifies to install from the file rather than from an APT repository.
+
+To list the contents of a .deb file:
+```
+sudo apt ................. # I don't know!
+```
+
+To remove the package after it's installed:
+```
+sudo apt remove package-name
+```
+
+
 ## How-to: Some details
 
 1. If you change CMakeLists.txt, you have to rerun `cmake`.
