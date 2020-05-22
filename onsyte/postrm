@@ -2,4 +2,5 @@
 
 /bin/rm -rf /home/devuser/apps/hello
 
+pip3 uninstall paho-mqtt
 

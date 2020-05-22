@@ -1,5 +1,8 @@
 #! /bin/sh
 
 # TODO: Do all of the pip3 installs in this file.
+echo "----- Installing paho-mqtt -----"
+pip3 install paho-mqtt
 # TODO: Add some stdout so that the user knows what's going on.
+echo "----- Making directories -----"
 mkdir /home/devuser/apps/hello
